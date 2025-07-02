@@ -1,0 +1,41 @@
+.access {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #themeToggle {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+#themeToggle input[type="checkbox"] {
+  display: none;
+}
+
+#themeToggle .icon {
+position: absolute;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* Default: show moon (light mode) */
+#themeToggle .moon {
+  opacity: 1;
+}
+
+/* When dark mode is active: hide moon, show sun */
+body.dark-mode #themeToggle .moon {
+  opacity: 0;
+}
+
+body.dark-mode #themeToggle .sun {
+  opacity: 1;
+}
