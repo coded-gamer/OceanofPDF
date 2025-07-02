@@ -1,3 +1,5 @@
 /styles.css.map
 /styles.scss
-/_narvbar.scss
+/_navBar.scss
+/_mainContent.scss
+/_darkMode.scss
